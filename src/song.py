@@ -7,7 +7,6 @@ class Song:
     def __int__(self, name):
         self.name = name
 
-    # name setter/getter
     def set_name(self, n):
         self.name = n
 
