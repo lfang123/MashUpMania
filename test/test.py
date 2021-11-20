@@ -8,15 +8,15 @@ def test_song_class_default_constructor():
     song = Song()
     assert song.name == ""
     assert song.duration == 0
-    assert song.fullAudio == "/"
+    assert song.full_audio == "/"
     assert song.genre == ""
-    assert song.vocalAudio == "/"
-    assert song.timeSignature == 0
+    assert song.vocal_audio == "/"
+    assert song.time_signature == 0
     assert song.tempo == 0
     assert song.mode
     assert song.key == 0
     assert song.instrumentalness == 0.0
-    assert song.instrumentalAudio == "/"
+    assert song.instrumental_audio == "/"
 
 
 def test_song_class_constructor():
@@ -24,15 +24,15 @@ def test_song_class_constructor():
                 "/c/Users/lfang/Music")
     assert song.name == "song name"
     assert song.duration == 3
-    assert song.fullAudio == "/c/Users/lfang/Music"
+    assert song.full_audio == "/c/Users/lfang/Music"
     assert song.genre == "EDM"
-    assert song.vocalAudio == "/c/Users/lfang/Music"
-    assert song.timeSignature == 3
+    assert song.vocal_audio == "/c/Users/lfang/Music"
+    assert song.time_signature == 3
     assert song.tempo == 160
     assert song.mode
     assert song.key == 1
     assert song.instrumentalness == 5.0
-    assert song.instrumentalAudio == "/c/Users/lfang/Music"
+    assert song.instrumental_audio == "/c/Users/lfang/Music"
 
 
 def test_song_class_set_method():
