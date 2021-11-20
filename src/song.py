@@ -1,6 +1,7 @@
 class Song:
 
-    def __init__(self, name=None, duration=None, fullAudio=None, genre=None, vocalAudio=None, timeSignature=None, tempo=None, mode=None, key=None, instrumentalness=None, instrumentalAudio=None):
+    def __init__(self, name=None, duration=None, fullAudio=None, genre=None, vocalAudio=None, timeSignature=None,
+                 tempo=None, mode=None, key=None, instrumentalness=None, instrumentalAudio=None):
         # overloaded constructor
         if name:
             self.name = name
