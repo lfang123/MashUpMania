@@ -1,31 +1,33 @@
 class Song:
-    # default constructor
-    def __init__(self):
-        self.name = ""
-        self.duration = 0
-        self.fullAudio = "/"
-        self.genre = ""
-        self.vocalAudio = "/"
-        self.timeSignature = 0
-        self.tempo = 0
-        self.mode = True
-        self.key = 0
-        self.instrumentalness = 0.0
-        self.instrumentalAudio = "/"
 
-    # constructor
-    def __int__(self, name, duration, fullAudio, genre, vocalAudio, timeSignature, tempo, mode, key, instrumentalness, instrumentalAudio):
-        self.name = name
-        self.duration = duration
-        self.fullAudio = fullAudio
-        self.genre = genre
-        self.vocalAudio = vocalAudio
-        self.timeSignature = timeSignature
-        self.tempo = tempo
-        self.mode = mode
-        self.key = key
-        self.instrumentalness = instrumentalness
-        self.instrumentalAudio = instrumentalAudio
+    def __init__(self, name=None, duration=None, fullAudio=None, genre=None, vocalAudio=None, timeSignature=None, tempo=None, mode=None, key=None, instrumentalness=None, instrumentalAudio=None):
+        # overloaded constructor
+        if name:
+            self.name = name
+            self.duration = duration
+            self.fullAudio = fullAudio
+            self.genre = genre
+            self.vocalAudio = vocalAudio
+            self.timeSignature = timeSignature
+            self.tempo = tempo
+            self.mode = mode
+            self.key = key
+            self.instrumentalness = instrumentalness
+            self.instrumentalAudio = instrumentalAudio
+
+        # default constructor
+        else:
+            self.name = ""
+            self.duration = 0
+            self.fullAudio = "/"
+            self.genre = ""
+            self.vocalAudio = "/"
+            self.timeSignature = 0
+            self.tempo = 0
+            self.mode = True
+            self.key = 0
+            self.instrumentalness = 0.0
+            self.instrumentalAudio = "/"
 
     # getter/setter methods
     def set_name(self, n):
