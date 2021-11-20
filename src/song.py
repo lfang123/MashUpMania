@@ -1,12 +1,13 @@
 class Song:
 
-    def __init__(self, name=None, duration=None, full_audio=None, genre=None, vocal_audio=None, time_signature=None,
+    def __init__(self, name=None, artist_name=None, duration=None, full_audio=None, genre=None, vocal_audio=None, time_signature=None,
                  tempo=None, mode=None, key=None, instrumentalness=None, instrumental_audio=None):
         # overloaded constructor
         if name:
             self.name = name
+            self.artist_name = artist_name
             self.duration = duration
-            self.full_audioudio = full_audio
+            self.full_audio = full_audio
             self.genre = genre
             self.vocal_audio = vocal_audio
             self.time_signature = time_signature
@@ -19,6 +20,7 @@ class Song:
         # default constructor
         else:
             self.name = ""
+            self.artist_name = ""
             self.duration = 0
             self.full_audio = "/"
             self.genre = ""
@@ -35,6 +37,12 @@ class Song:
         self.name = n
 
     def get_name(self):
+        return self.name
+
+    def set_artist_name(self, n):
+            self.name = n
+
+    def get_artist_name(self):
         return self.name
 
     def set_duration(self, d):
